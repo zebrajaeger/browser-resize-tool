@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+Set Bounds:
+<div id="bounds-chooser">
+    <select id="bounds-pre">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="120">120</option>
+        <option value="150">150</option>
+        <option value="200">200</option>
+        <option value="500">500</option>
+        <option value="800">800</option>
+        <option value="1000">1000</option>
+        <option value="1200">1200</option>
+        <option value="1280">1280</option>
+        <option value="1500">1500</option>
+        <option value="2000">2000</option>
+        <option value="3000">3000</option>
+        <option value="4000">4000</option>
+    </select>
+    <input type="number" id="bounds">
+</div>
+
+<div id="drop-area">
+    <form class="my-form">
+        <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+        <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+        <label class="button" for="fileElem">Select some files</label>
+    </form>
+</div>
+
+Click on image to copy it to clipboard.
+<div id="gallery"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

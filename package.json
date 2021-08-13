@@ -1,0 +1,17 @@
+{
+  "name": "browser-resize-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "browser-sync start --server --watch --host 0.0.0.0 --index index.html"
+  },
+  "keywords": [],
+  "author": "Lars Brandt",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5"
+  }
+}
